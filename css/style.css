@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#grid_wrapper {
+    display: grid;
+    grid-template-columns: 88px 80px 80px 80px 80px;
+    grid-template-rows: 60px 30px 200px 140px 60px;
+    grid-template-areas: 
+    "he he he he he"
+    "na na na na na"
+    "se se se se se"
+    "ar ar ar ar ar"
+    "fo fo fo fo fo"
+    ;
+}
+
+header {
+    grid-area: he;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+#Kategorier {
+    grid-area: na;
+    background-color:red;
+}
+
+.Homepage_images {
+    grid-area: se;
+    background-color: blue;
+}
+
+.Nyheter_bild {
+    grid-area: ar;
+    background-color: orange;
+}
+
+footer {
+    grid-area: fo;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: green;
+
+}
