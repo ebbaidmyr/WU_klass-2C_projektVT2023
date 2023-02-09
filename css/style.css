@@ -5,10 +5,15 @@
     text-decoration: none;
 }
 
+body {
+    height: 100vh;
+    width: auto;
+}
+
 #grid_wrapper {
     display: grid;
-    grid-template-columns: 88px 80px 80px 80px 80px;
-    grid-template-rows: 60px 30px 200px 140px 60px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 90px 30px 400px 1000px 80px;
     grid-template-areas: 
     "he he he he he"
     "na na na na na"
@@ -29,6 +34,10 @@ header {
 #Kategorier {
     grid-area: na;
     background-color:red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+    flex-direction: center;
 }
 
 .Homepage_images {
@@ -36,9 +45,12 @@ header {
     background-color: blue;
 }
 
-.Nyheter_bild {
+#Nyheter {
     grid-area: ar;
     background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -48,5 +60,40 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     background-color: green;
+}
 
+
+h2 {
+    font-size: 15px;
+}
+
+.Nyheter_bild {
+    margin: 15px;
+    height: 200px;
+    width: 150px;
+    border: 5px solid black;
+}
+
+@media  screen and (min-width: 700px) {
+
+    #grid_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 90px 30px 400px 700px 80px;
+        grid-template-areas: 
+        "he he he he he"
+        "na na na na na"
+        "se se se se se"
+        "ar ar ar ar ar"
+        "fo fo fo fo fo"
+        ;
+    }
+
+    .Nyheter_bild {
+        margin: 20px;
+        height: 300px;
+        width: 250px;
+        border: 5px solid black;
+    }
+    
 }
