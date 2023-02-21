@@ -13,7 +13,7 @@ body {
 #grid_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 90px 30px 400px 1000px 80px;
+    grid-template-rows: 90px 30px 400px 1200px 80px;
     grid-template-areas: 
     "he he he he he"
     "na na na na na"
@@ -62,24 +62,71 @@ footer {
     background-color: green;
 }
 
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 
 h2 {
     font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px;
+    color: black;
 }
+
+h2:hover {
+    color: skyblue;
+    text-decoration: underline;
+}
+
+h2:visited {
+    color: black;
+}
+
+h3 {
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+h3:hover {
+    color: skyblue;
+    text-decoration: underline;
+}
+
 
 .Nyheter_bild {
     margin: 15px;
-    height: 200px;
-    width: 150px;
+    height: 250px;
+    width: 170px;
     border: 5px solid black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
+
+#Nyheter img {
+    height: 150px;
+    width: 150px;
+}
+
+.Nyheter_bild h3 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+
+
+
 
 @media  screen and (min-width: 700px) {
 
     #grid_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 90px 30px 400px 700px 80px;
+        grid-template-rows: 120px 40px 500px 1000px 80px;
         grid-template-areas: 
         "he he he he he"
         "na na na na na"
@@ -90,10 +137,26 @@ h2 {
     }
 
     .Nyheter_bild {
-        margin: 20px;
-        height: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 390px;
         width: 250px;
         border: 5px solid black;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Nyheter img {
+        height: 270px;
+        width: 230px;
+    }
+
+    .Nyheter_bild h3 {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
     }
     
 }
