@@ -13,7 +13,7 @@ body {
 #grid_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 90px 30px 300px 1200px 80px;
+    grid-template-rows: 90px 30px 450px 1200px 80px;
     grid-template-areas: 
     "he he he he he"
     "na na na na na"
@@ -30,6 +30,14 @@ header {
     align-items: center;
 }
 
+#site_logo {
+    height: 50px;
+    width: auto;
+    margin: 0;
+    position: absolute;
+    left: 0;
+}
+
 .shopping_icons {
     position: absolute;
     right: 20px;
@@ -43,10 +51,16 @@ header {
     margin: 5px;
 }
 
+.shopping_icons img:hover {
+    border: 3px solid skyblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 #Kategorier {
     grid-area: na;
     display: flex;
-    justify-content:
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: center;
     border: 1px solid black;
@@ -64,16 +78,37 @@ header {
     align-items: right;
 }
 
+.homepage_picture_text {
+    position: absolute;
+    text-align: center;
+    bottom: 330px;
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    background-color: rgba(54, 50, 50, 0.741);
+}
+
+
+.homepage_picture_text:hover {
+    color: skyblue;
+    text-decoration: underline;
+}
+
+
 #homepage_pictures img {
-    height: 300px;
-    width: 230px;
+    height: 100%;
+    width: 415px;
+    object-fit: cover;
 }
 
 #homepage_nyheter {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+    overflow: hidden;
+}
+
+.Homepage p {
+    font-size: 12px;
 }
 
 #Nyheter {
@@ -133,11 +168,11 @@ h3:hover {
 
 
 h4 {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 p {
-    font-size: 5px;
+    font-size: 14px;
 }
 
 .Nyheter_bild {
@@ -154,6 +189,7 @@ p {
 #Nyheter img {
     height: 150px;
     width: 150px;
+    object-fit: cover;
 }
 
 .Nyheter_bild h3 {
@@ -163,10 +199,11 @@ p {
     margin: 0;
 }
 
-
+.pris {
+    position: relative;
+}
 
 @media  screen and (min-width: 700px) {
-
     #grid_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -179,6 +216,14 @@ p {
         "fo fo fo fo fo"
         ;
     }
+
+    .homepage_picture_text {
+        position: inherit;
+        overflow: hidden;
+        padding: 0;
+    }
+    
+
 
     #Kategorier {
         border: 1.5px solid black;
@@ -202,6 +247,12 @@ p {
         width: 230px;
     }
 
+    #homepage_nyheter {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
 
     h1 {
         font-size: 50px;
@@ -237,5 +288,17 @@ p {
         height: 30px;
         width: auto;
         margin: 15px;
+    }
+
+    #site_logo {
+        height: 110px;
+        width: auto;
+        margin: 0;
+        position: absolute;
+        left: 0;
+    }
+
+    .Homepage p {
+        font-size: 23px;
     }
 }
