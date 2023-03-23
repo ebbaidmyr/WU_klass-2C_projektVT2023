@@ -23,6 +23,18 @@ body {
     ;
 }
 
+#grid_accessorarer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 90px 30px 2300px 80px;
+    grid-template-areas: 
+    "he he he he he"
+    "na na na na na"
+    "ar ar ar ar ar"
+    "fo fo fo fo fo"
+    ;
+}
+
 header {
     grid-area: he;
     display: flex;
@@ -148,7 +160,7 @@ h2:hover {
 }
 
 h2:visited {
-    color: black;
+    color: purple;
 }
 
 h3 {
@@ -176,7 +188,7 @@ p {
 }
 
 .Nyheter_bild {
-    margin: 15px;
+    margin: 10px;
     height: 250px;
     width: 170px;
     border: 2px solid black;
@@ -216,6 +228,19 @@ p {
         "fo fo fo fo fo"
         ;
     }
+
+    #grid_accessorarer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 90px 30px 1800px 80px;
+        grid-template-areas: 
+        "he he he he he"
+        "na na na na na"
+        "ar ar ar ar ar"
+        "fo fo fo fo fo"
+        ;
+    }
+    
 
     .homepage_picture_text {
         position: inherit;
