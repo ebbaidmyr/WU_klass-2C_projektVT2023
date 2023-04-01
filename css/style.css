@@ -48,6 +48,82 @@ body {
     ;
 }
 
+#grid_om_oss {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 30px 1100px 1100px 1100px 1100px 80px;
+    grid-template-areas: 
+    "he he he he"
+    "na na na na"
+    "in in in in"
+    "ma ma ma ma"
+    "hi hi hi hi"
+    "tr tr tr tr"
+    "fo fo fo fo"
+    ;
+}
+
+.om_oss_text {
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    background-color: rgba(218, 208, 196, 0.795);
+    height: 500px;
+}
+
+.om_oss_section {
+    flex-direction: column;
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: 30px;
+}
+
+.om_oss_section h5 {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.om_oss_section p {
+    font-size: 17px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-family: 'Lucida Sans Regular'
+}
+
+#om_oss_innebord {
+    grid-area: in;
+}
+
+#om_oss_vart_mal {
+    grid-area: ma;
+}
+
+#om_oss_historia {
+    grid-area: hi;
+}
+
+#om_oss_trad {
+    grid-area: tr;
+}
+
+.om_oss_img {
+    margin: 10px;
+    width: 280px;
+    height: 450px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #air_force_1_picture_and_text {
     grid-area: pt;
     background-color: rgba(218, 208, 196, 0.795);
@@ -191,8 +267,9 @@ header {
     overflow: hidden;
 }
 
-.Homepage p {
-    font-size: 12px;
+#homepage_p {
+    font-family: 'Lucida Sans Regular';
+    font-size: 20px;
 }
 
 #Nyheter {
@@ -325,6 +402,47 @@ p {
         "fo fo fo fo fo"
         ;
     }
+
+    #grid_om_oss {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 120px 30px 1100px 80px;
+        grid-template-areas: 
+        "he he he he"
+        "na na na na"
+        "in ma hi tr"
+        "fo fo fo fo"
+        ;
+    }
+
+    .om_oss_text {
+        margin: 20px;
+        margin-top: 10px;
+        margin-bottom: 0;
+        background-color: rgba(218, 208, 196, 0.795);
+        height: 570px;
+    }
+
+    .om_oss_section {
+        flex-direction: column;
+        padding-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        margin: 0;
+    }
+
+    .om_oss_img {
+        margin: 10px;
+        width: 280px;
+        height: 450px;
+        object-fit: cover;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
 
     .homepage_picture_text {
@@ -398,6 +516,10 @@ p {
         padding: 20px;
         margin-top: 150px;
         flex-direction: column;
+    }
+
+    #air_force_1_title p {
+        font-family: 'Lucida Sans Regular';
     }
 
     #air_force_1_picture_and_text {
