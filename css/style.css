@@ -38,7 +38,7 @@ body {
 #grid_shop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 90px 30px 390px 340px 80px;
+    grid-template-rows: 90px 30px 390px 390px 80px;
     grid-template-areas: 
     "he he he he he"
     "na na na na na"
@@ -51,7 +51,7 @@ body {
 #grid_om_oss {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 120px 30px 1100px 1100px 1100px 1100px 80px;
+    grid-template-rows: 120px 30px 1300px 1300px 1300px 1300px 80px;
     grid-template-areas: 
     "he he he he"
     "na na na na"
@@ -68,7 +68,7 @@ body {
     margin-top: 10px;
     margin-bottom: 0;
     background-color: rgba(218, 208, 196, 0.795);
-    height: 500px;
+    height: 700px;
 }
 
 .om_oss_section {
@@ -176,12 +176,62 @@ body {
     margin-right: 30px;
 }
 
+#air_force_1_picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
 #air_force_1_picture img {
     padding: 40px;
     height: 400px;
     width: 400px;
     object-fit: cover;
 }
+
+.link_list_visible {
+    transform: translateY(1205px);
+}
+
+#link_list a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lucida Sans Regular';
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+#link_list {
+    height: 80px;
+    width: 95px;
+    position: absolute;
+    top: -400px;
+    right: 92px;
+    background-color: rgba(42, 50, 50, 0.211);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+#link_list li {
+    margin: 5px;
+}
+
+#link_list li:hover {
+    text-decoration: underline;
+}
+
+.arrow_down #arrow {
+    transform: rotate(-180deg);
+   }
 
 header {
     grid-area: he;
@@ -303,11 +353,6 @@ h2 {
     color: black;
 }
 
-h2:hover {
-    color: skyblue;
-    text-decoration: underline;
-}
-
 h2:visited {
     color: purple;
 }
@@ -358,6 +403,10 @@ p {
     align-items: center;
     justify-content: center;
     margin: 0;
+}
+
+#pris_i_kr {
+    text-decoration: underline;
 }
 
 .pris {
@@ -562,6 +611,11 @@ p {
         font-size: 20px;
     }
 
+    h2:hover {
+        color: skyblue;
+        text-decoration: underline;
+    }
+
     #homepage_pictures img {
         height: 500px;
         width: 700px;
@@ -587,5 +641,39 @@ p {
 
     .Homepage p {
         font-size: 23px;
+    }
+
+    .link_list_visible {
+        transform: translateY(1163px);
+    }
+    
+    #link_list a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-family: 'Lucida Sans Regular';
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    
+    #link_list {
+        height: 90px;
+        width: 140px;
+        position: absolute;
+        top: -400px;
+        right: 60px;
+        background-color: rgba(42, 50, 50, 0.211);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    #link_list li {
+        margin: 5px;
+        padding-top: 10px;
     }
 }
