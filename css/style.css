@@ -272,7 +272,6 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: center;
     border: 1px solid black;
 }
 
@@ -285,7 +284,6 @@ header {
 #homepage_pictures {
     display: grid;
     justify-content: right;
-    align-items: right;
 }
 
 .homepage_picture_text {
@@ -545,7 +543,6 @@ p {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        flex-direction: center;
         border: 1px solid black;
     }
 
