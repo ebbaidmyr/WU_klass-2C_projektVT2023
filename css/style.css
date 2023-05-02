@@ -265,6 +265,7 @@ header {
     border: 3px solid skyblue;
     border-radius: 5px;
     padding: 5px;
+
 }
 
 #Kategorier {
@@ -405,6 +406,35 @@ p {
 
 .pris {
     position: relative;
+}
+
+.pris_beskrivning {
+    font-size: 9px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+}
+
+#Nyheter .Nyheter_bild .varukorg_produkter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Nyheter .Nyheter_bild .varukorg_produkter img{
+    height: 25px;
+    margin-left: 20px;
+    width: auto;
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 30%;
+}
+
+#Nyheter .Nyheter_bild .varukorg_produkter img:hover{
+    border: 3px solid skyblue;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 @media  screen and (min-width: 700px) {
@@ -668,5 +698,13 @@ p {
     #link_list li {
         margin: 5px;
         padding-top: 10px;
+    }
+
+    .pris_beskrivning {
+        font-size: 12px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 0;
     }
 }
