@@ -479,13 +479,86 @@ p {
     #grid_om_oss {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 120px 30px 1100px 80px;
+        grid-template-rows: 120px 30px 700px 1100px 800px 80px;
         grid-template-areas: 
         "he he he he"
         "na na na na"
+        "oos oos oos oos"
         "in ma hi tr"
+        "hh hh hh hh"
         "fo fo fo fo"
         ;
+    }
+
+    #om_oss_skor {
+        grid-area: oos;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1fr;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        border: 5px solid white;
+        background-image: url("/img/om_oss_skor.avif");
+    }
+
+    #hitta {
+        grid-area: hh;
+        border: 2px solid black;
+        margin: 20px;
+        margin-top: 0;
+    }
+
+    #hitta_hit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #hitta_hit h3 {
+        color: black;
+        background-color: rgba(218, 208, 196, 0.795);
+        padding: 20px;
+        margin-top: 20px;
+        padding-left: 530px;
+        padding-right: 530px;
+        text-decoration: none;
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
+    #hitta_hit_bild {
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        height: 600px;
+        margin: 20px;
+        width: auto;
+        background-size: cover;
+        background-position: center;
+        height: fr;
+        width: auto;
+        background-image: url(/img/hitta_hit_bild.png);
+    }
+
+    #adresser {
+        list-style-type: none;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        font-family: 'Lucida Sans Regular';
+        text-decoration: underline;
+    }
+
+    #om_oss_skor h4 {
+        color: rgb(0, 0, 0);
+        background-color: rgba(227, 221, 213, 0.527);
+        padding: 50px;
+        padding-left: 200px;
+        padding-right: 200px;
+        text-decoration: underline;
+        letter-spacing: 3px;
     }
 
     .om_oss_text {
