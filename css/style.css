@@ -51,17 +51,117 @@ body {
 #grid_om_oss {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 120px 30px 1300px 1300px 1300px 1300px 80px;
+    grid-template-rows: 120px 30px 600px 1300px 1300px 1300px 1300px 540px 80px;
     grid-template-areas: 
     "he he he he"
     "na na na na"
+    "oos oos oos oos"
     "in in in in"
     "ma ma ma ma"
     "hi hi hi hi"
     "tr tr tr tr"
+    "hh hh hh hh"
     "fo fo fo fo"
     ;
 }
+
+#om_oss_skor {
+    grid-area: oos;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid white;
+    background-image: url("/img/om_oss_skor.avif");
+}
+
+#om_oss_skor h4 {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    background-color: rgba(227, 221, 213, 0.527);
+}
+
+#om_oss_skor p {
+    display: none;
+}
+
+#om_oss_skor button {
+    margin: 10px;
+    background-color: rgba(227, 221, 213, 0.697);
+    border-radius: 15%;
+    padding: 3px;
+    color: black;
+}
+
+#social_media_logo {
+    height: 30px;
+}
+
+#hitta {
+    grid-area: hh;
+    border: 2px solid black;
+    margin: 20px;
+    margin-top: 0;
+}
+
+#hitta_hit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hitta_hit h3 {
+    color: black;
+    background-color: rgba(218, 208, 196, 0.795);
+    padding: 20px;
+    margin-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-decoration: none;
+    font-family: 'Lucida Sans Regular';
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+#hitta_hit_bild {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    height: 300px;
+    margin: 20px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    height: fr;
+    width: auto;
+    background-image: url(/img/hitta_hit_bild.png);
+}
+
+#adresser {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans Regular';
+    text-decoration: underline;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#adresser li {
+    margin-bottom: 5px;
+}
+
 
 .om_oss_text {
     margin: 50px;
@@ -122,6 +222,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    filter: grayscale(40%);
 }
 
 #air_force_1_picture_and_text {
@@ -354,7 +455,7 @@ h2 {
 
 h3 {
     font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lucida Grande';
     color: white;
 }
 
@@ -479,7 +580,7 @@ p {
     #grid_om_oss {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 120px 30px 700px 1100px 800px 80px;
+        grid-template-rows: 120px 30px 600px 1100px 800px 80px;
         grid-template-areas: 
         "he he he he"
         "na na na na"
@@ -493,6 +594,7 @@ p {
     #om_oss_skor {
         grid-area: oos;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 1fr;
@@ -501,6 +603,43 @@ p {
         background-position: center;
         border: 5px solid white;
         background-image: url("/img/om_oss_skor.avif");
+    }
+
+    #om_oss_skor h4 {
+        color: rgb(0, 0, 0);
+        padding: 50px;
+        padding-bottom: 0;
+        padding-left: 200px;
+        padding-right: 200px;
+        text-decoration: underline;
+        letter-spacing: 3px;
+        background-color: rgba(227, 221, 213, 0.527);
+    }
+
+    #om_oss_skor p {
+        display:block;
+        color: rgb(0, 0, 0);
+        padding: 20px;
+        padding-left: 130px;
+        padding-right: 130px;
+        margin-left: 183px;
+        margin-right: 183px;
+        background-color: rgba(227, 221, 213, 0.527);
+    }
+
+    #om_oss_skor button {
+        margin: 10px;
+        background-color: rgba(227, 221, 213, 0.697);
+        border-radius: 15%;
+        padding: 3px;
+    }
+
+    #om_oss_skor button:hover {
+        background-color: lightblue;
+    }
+
+    #social_media_logo {
+        height: 30px;
     }
 
     #hitta {
@@ -523,6 +662,7 @@ p {
         margin-top: 20px;
         padding-left: 530px;
         padding-right: 530px;
+        font-family: 'Times New Roman', Times, serif;
         text-decoration: none;
         font-size: 25px;
         letter-spacing: 3px;
@@ -545,20 +685,19 @@ p {
     #adresser {
         list-style-type: none;
         display: flex;
+        flex-direction: row;
         align-items: flex-end;
         justify-content: space-around;
         font-family: 'Lucida Sans Regular';
         text-decoration: underline;
+        font-size: 15px;
+        padding: 0px;
+        margin: 0px;
     }
 
-    #om_oss_skor h4 {
-        color: rgb(0, 0, 0);
-        background-color: rgba(227, 221, 213, 0.527);
-        padding: 50px;
-        padding-left: 200px;
-        padding-right: 200px;
-        text-decoration: underline;
-        letter-spacing: 3px;
+    
+    #adresser li {
+        margin-bottom: 5px;
     }
 
     .om_oss_text {
@@ -588,6 +727,7 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
+        filter: grayscale(40%);
     }
     
 
