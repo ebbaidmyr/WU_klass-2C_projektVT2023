@@ -51,18 +51,51 @@ body {
 #grid_om_oss {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 120px 30px 600px 1300px 1300px 1300px 1300px 540px 80px;
+    grid-template-rows: 120px 30px 500px 400px 540px 1100px 1100px 1100px 400px 80px;
     grid-template-areas: 
     "he he he he"
     "na na na na"
     "oos oos oos oos"
-    "in in in in"
+    "ooi ooi ooi ooi"
+    "hh hh hh hh"
     "ma ma ma ma"
     "hi hi hi hi"
     "tr tr tr tr"
-    "hh hh hh hh"
+    "ooi2 ooi2 ooi2 ooi2"
     "fo fo fo fo"
     ;
+}
+
+.om_oss_information {
+    grid-area: ooi;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    flex-direction: column;
+}
+
+.om_oss_information2 {
+    grid-area: ooi2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-top: 0px;
+    padding-bottom: 0;
+    text-align: center;
+    flex-direction: column;
+}
+
+.om_oss_information2 p{
+    margin: 5px;
+}
+
+.om_oss_information p {
+    margin: 5px;
 }
 
 #om_oss_skor {
@@ -107,8 +140,8 @@ body {
 
 #hitta {
     grid-area: hh;
+    margin: 10px;
     border: 2px solid black;
-    margin: 20px;
     margin-top: 0;
 }
 
@@ -164,21 +197,28 @@ body {
 
 
 .om_oss_text {
-    margin: 50px;
+    margin: 30px;
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     background-color: rgba(218, 208, 196, 0.795);
-    height: 700px;
+    height: 550px;
+}
+
+.om_oss_text2 {
+    margin: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: rgba(218, 208, 196, 0.795);
+    height: 850px;
 }
 
 .om_oss_section {
     flex-direction: column;
-    padding-top: 0px;
+    padding-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
-    margin: 30px;
+    margin: 0px;
 }
 
 .om_oss_section h5 {
@@ -206,6 +246,10 @@ body {
     grid-area: ma;
 }
 
+#vart_mal_text {
+    width: 400px;
+}
+
 #om_oss_historia {
     grid-area: hi;
 }
@@ -215,9 +259,20 @@ body {
 }
 
 .om_oss_img {
-    margin: 10px;
-    width: 280px;
+    margin: 0px;
+    width: 350px;
     height: 450px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(40%);
+}
+
+.om_oss_img2 {
+    margin: 0px;
+    width: 400px;
+    height: 350px;
     object-fit: cover;
     display: flex;
     justify-content: center;
@@ -538,6 +593,22 @@ p {
     padding: 5px;
 }
 
+#red_cross {
+    display: flex;
+    width: 200px;
+    border: 1px solid black;
+    flex-direction: row;
+    margin: 20px;
+}
+
+#funds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    flex-direction: column;
+}
+
 @media  screen and (min-width: 700px) {
     #grid_wrapper {
         display: grid;
@@ -580,15 +651,84 @@ p {
     #grid_om_oss {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 120px 30px 600px 1100px 800px 80px;
+        grid-template-rows: 120px 30px 600px 200px 750px 1100px 200px 80px;
         grid-template-areas: 
         "he he he he"
         "na na na na"
         "oos oos oos oos"
-        "in ma hi tr"
+        "ooi ooi ooi ooi"
         "hh hh hh hh"
+        "hi ma ma tr"
+        "ooi2 ooi2 ooi2 ooi2"
         "fo fo fo fo"
         ;
+    }
+
+    .om_oss_information {
+        grid-area: ooi;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 200px;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .om_oss_information2 {
+        grid-area: ooi2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px;
+        padding-top:0px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #funds {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        flex-direction: row;
+    }
+
+    #vart_mal_text {
+        width: auto;
+    }
+
+    .om_oss_img2 {
+        margin: 0px;
+        margin-top: 60px;
+        width: 600px;
+        height: 350px;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        filter: grayscale(40%);
+    }
+
+    .om_oss_information2 img {
+        width: 100px;
+    }
+
+    .om_oss_information2 p{
+        margin: 15px;
+    }
+
+    .om_oss_information p {
+        margin: 15px;
+    }
+
+    .om_oss_text2 {
+        margin: 30px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        background-color: rgba(218, 208, 196, 0.795);
+        height: 600px;
     }
 
     #om_oss_skor {
@@ -608,7 +748,6 @@ p {
     #om_oss_skor h4 {
         color: rgb(0, 0, 0);
         padding: 50px;
-        padding-bottom: 0;
         padding-left: 200px;
         padding-right: 200px;
         text-decoration: underline;
@@ -644,9 +783,9 @@ p {
 
     #hitta {
         grid-area: hh;
-        border: 2px solid black;
         margin: 20px;
         margin-top: 0;
+        border: none;
     }
 
     #hitta_hit {
@@ -702,10 +841,10 @@ p {
 
     .om_oss_text {
         margin: 20px;
-        margin-top: 10px;
+        margin-top: 5px;
         margin-bottom: 0;
         background-color: rgba(218, 208, 196, 0.795);
-        height: 570px;
+        height: 580px;
     }
 
     .om_oss_section {
@@ -719,11 +858,10 @@ p {
     }
 
     .om_oss_img {
-        margin: 10px;
-        width: 280px;
-        height: 450px;
+        margin: 0px;
+        width: 250px;
+        height: 350px;
         object-fit: cover;
-        border: 2px solid black;
         display: flex;
         justify-content: center;
         align-items: center;
